@@ -11,6 +11,13 @@ export const ContadorScreen = () => {
       </Text>
       <Fab
         title="+1"
+        onPress={()=>setContador(contador+1)}
+        position='br'
+      />
+      <Fab
+        title="-1"
+        onPress={()=>setContador(contador-1)}
+        position='bl'
       />
       {/* <Button
         // onPress={}
